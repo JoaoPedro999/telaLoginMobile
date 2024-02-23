@@ -10,22 +10,23 @@ export default function App() {
   return (
     <View style={styles.container}>
        <ImageBackground source={require('./assets/fundo.jpg')} resizeMode="cover" style={styles.image}>
-      <Text style={styles.titulo}>Login</Text>
+        <Text style={styles.titulo}>Login</Text>
+        
+        <TextInput style={styles.inputname} placeholder='Digite seu Nome' />
+        <TextInput style={styles.inputname} placeholder='Digite seu E-mail' />
+        <TextInput style={styles.inputname} placeholder='Digite sua Senha' secureTextEntry={true}/>
+        <Button 
+          onPress={btn}
+          style={styles.button} 
+          title='Logar'  
+        />
+        <Image
+          style={styles.senailogo}
+          source={require('./assets/SENAI.png')}
+        />
       
-      <TextInput style={styles.inputname} placeholder='Digite seu Nome' />
-      <TextInput style={styles.inputname} placeholder='Digite seu E-mail' />
-      <TextInput style={styles.inputname} placeholder='Digite sua Senha' secureTextEntry={true}/>
-      <Button 
-        onPress={btn}
-        style={styles.button} 
-        title='Logar'  
-      />
-      <Image
-        style={styles.senailogo}
-        source={require('./assets/SENAI.png')}
-      />
-        </ImageBackground>
-      <StatusBar style="auto" />
+        <StatusBar style="auto" />
+      </ImageBackground>
     </View>
   );
 }
@@ -33,8 +34,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   text: {
     color: 'white',
@@ -68,9 +67,10 @@ const styles = StyleSheet.create({
    bottom: 400,
   },
   image: {
+    flex: 1,
+    width: '100%',
+    alignItems: 'center',
     justifyContent: 'center',
-    width:'100%',
-    height: '100%',
   },
 });
 

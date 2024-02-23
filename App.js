@@ -15,7 +15,7 @@ export default function App() {
         <TextInput style={styles.inputname} placeholder='Digite seu Nome' />
         <TextInput style={styles.inputname} placeholder='Digite seu E-mail' />
         <TextInput style={styles.inputname} placeholder='Digite sua Senha' secureTextEntry={true} />
-        <Button
+        <Button 
           onPress={btn}
           style={styles.button}
           title='Logar'
@@ -42,17 +42,20 @@ const styles = StyleSheet.create({
   inputname: {
     color: 'black',
     borderWidth: 1,
-    borderColor: 'black',
+    borderColor: 'lightgray',
     marginBottom: 10,
     width: 300,
     height: 50,
-    backgroundColor: 'white',
+    backgroundColor: 'lightgray',
+    opacity: '80%',
 
   },
   button: {
     color: 'white',
     backgroundColor: 'black',
     fontSize: 20,
+    width: '50',
+    height: '25',
   },
   titulo: {
     fontWeight: 'bold',

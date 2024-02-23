@@ -9,22 +9,22 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-       <ImageBackground source={require('./assets/fundo.jpg')} resizeMode="cover" style={styles.image}>
+      <ImageBackground source={require('./assets/fundo.jpg')} resizeMode="cover" style={styles.image}>
         <Text style={styles.titulo}>Login</Text>
-        
+
         <TextInput style={styles.inputname} placeholder='Digite seu Nome' />
         <TextInput style={styles.inputname} placeholder='Digite seu E-mail' />
-        <TextInput style={styles.inputname} placeholder='Digite sua Senha' secureTextEntry={true}/>
-        <Button 
+        <TextInput style={styles.inputname} placeholder='Digite sua Senha' secureTextEntry={true} />
+        <Button
           onPress={btn}
-          style={styles.button} 
-          title='Logar'  
+          style={styles.button}
+          title='Logar'
         />
         <Image
           style={styles.senailogo}
           source={require('./assets/SENAI.png')}
         />
-      
+
         <StatusBar style="auto" />
       </ImageBackground>
     </View>
@@ -45,9 +45,9 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     marginBottom: 10,
     width: 300,
-    height: 50, 
+    height: 50,
     backgroundColor: 'white',
-  
+
   },
   button: {
     color: 'white',
@@ -62,9 +62,9 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2,
   },
   senailogo: {
-   width: 250,
-   height: 50,
-   bottom: 400,
+    width: 250,
+    height: 50,
+    bottom: 400,
   },
   image: {
     flex: 1,

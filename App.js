@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput, Button, Image, ImageBackground } from 'react-native';
+import SecondComponent from './components/secondcomponents';
 
 export default function App() {
 
@@ -26,6 +27,7 @@ export default function App() {
         />
 
         <StatusBar style="auto" />
+      <SecondComponent/>
       </ImageBackground>
     </View>
   );
